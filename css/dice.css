@@ -1,0 +1,23 @@
+* { margin: 0; padding: 0; }
+
+section { height: 120px; width: 120px; background: #cacaca; display: -webkit-flex; margin-left: 50px; float: left; box-shadow: 5px 5px 20px #eee; }
+section .wall { display: -webkit-flex; -webkit-flex: 1; }
+section .wall .point { height: 20px; width: 20px; background: yellowgreen; border-radius: 50%; }
+section:nth-child(1) .wall { align-self: center; justify-content: center; }
+section:nth-child(2) .wall { justify-content: space-around; }
+section:nth-child(2) .wall:nth-child(1) { align-self: flex-start; margin-top: 20px; }
+section:nth-child(2) .wall:nth-child(2) { align-self: flex-end; margin-bottom: 20px; }
+section:nth-child(3) .wall { justify-content: space-around; }
+section:nth-child(3) .wall:nth-child(1) { align-self: flex-start; margin-top: 15px; }
+section:nth-child(3) .wall:nth-child(2) { align-self: center; }
+section:nth-child(3) .wall:nth-child(3) { align-self: flex-end; margin-bottom: 15px; }
+section:nth-child(4) .wall { justify-content: space-around; flex-direction: column; }
+section:nth-child(4) .wall:nth-child(1) { align-items: center; }
+section:nth-child(4) .wall:nth-child(2) { align-items: center; }
+section:nth-child(5) .wall { justify-content: space-around; flex-direction: column; }
+section:nth-child(5) .wall:nth-child(1) { align-items: center; }
+section:nth-child(5) .wall:nth-child(2) { align-self: center; justify-content: center; margin-left: 12px; }
+section:nth-child(5) .wall:nth-child(3) { align-items: center; }
+section:nth-child(6) .wall { justify-content: space-around; flex-direction: column; }
+section:nth-child(6) .wall:nth-child(1) { align-items: center; }
+section:nth-child(6) .wall:nth-child(2) { align-items: center; }

@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+section {
+    height: 120px;
+    width: 120px;
+    background: #cacaca;
+    display: -webkit-flex;
+    margin-left: 50px;
+    float: left;
+    box-shadow:5px 5px 20px #eee;
+    .wall {
+        display: -webkit-flex;
+        -webkit-flex: 1;
+        .point {
+            height: 20px;
+            width: 20px;
+            background: yellowgreen;
+            border-radius: 50%;
+        }
+    }
+    &:nth-child(1) {
+        .wall {
+            align-self: center;
+            justify-content: center;
+        }
+    }
+    &:nth-child(2) {
+        .wall {
+            justify-content: space-around;
+        }
+        .wall:nth-child(1) {
+            align-self: flex-start;
+            margin-top: 20px;
+        }
+        .wall:nth-child(2) {
+            align-self: flex-end;
+            margin-bottom: 20px;
+        }
+    }
+    &:nth-child(3) {
+        
+         .wall {
+            justify-content: space-around;
+        }
+        .wall:nth-child(1) {
+            align-self: flex-start;
+            margin-top:15px;
+        }
+        .wall:nth-child(2) {
+            align-self: center;
+            
+            
+        }
+        .wall:nth-child(3) {
+            align-self: flex-end;
+            margin-bottom:15px;
+            
+        }
+    }
+    &:nth-child(4){
+           
+         .wall {
+            justify-content: space-around;
+            flex-direction: column;
+        }
+        .wall:nth-child(1) {
+            align-items:center ;
+            
+        }
+        .wall:nth-child(2) {
+            align-items: center;
+            
+            
+        }
+        
+    }
+    &:nth-child(5){
+         .wall {
+            justify-content: space-around;
+            flex-direction: column;
+        }
+        .wall:nth-child(1) {
+            align-items:center ;
+            
+        }
+        .wall:nth-child(2){
+             align-self: center;
+            justify-content: center;
+            margin-left:12px;
+        }
+        .wall:nth-child(3) {
+            align-items: center;
+            
+            
+        }
+    
+   }
+   &:nth-child(6){
+         .wall {
+            justify-content: space-around;
+            flex-direction: column;
+        }
+        .wall:nth-child(1) {
+            align-items:center ;
+            
+        }
+        .wall:nth-child(2) {
+            align-items: center;
+            
+            
+        }
+   }
+}
